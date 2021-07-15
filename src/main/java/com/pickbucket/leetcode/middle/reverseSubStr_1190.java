@@ -2,7 +2,7 @@ package com.pickbucket.leetcode.middle;
 
 import java.util.Stack;
 
-public class reverseSubStr1190 {
+public class reverseSubStr_1190 {
     public static String reverseParentheses(String s) {
         char[] strChars = s.toCharArray();
         Stack<String> stack = new Stack<>();

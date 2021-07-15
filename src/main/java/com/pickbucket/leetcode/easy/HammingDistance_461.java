@@ -1,6 +1,6 @@
 package com.pickbucket.leetcode.easy;
 
-public class HammingDistance461 {
+public class HammingDistance_461 {
     public static int hammingDistance(int x, int y) {
        int d = x ^ y;
        int ans = 0;

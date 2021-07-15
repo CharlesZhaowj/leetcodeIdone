@@ -1,4 +1,4 @@
-package leetcode;
+package com.pickbucket.leetcode.others;
 
 import javafx.util.Pair;
 
