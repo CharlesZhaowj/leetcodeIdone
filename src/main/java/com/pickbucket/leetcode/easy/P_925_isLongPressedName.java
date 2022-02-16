@@ -48,6 +48,7 @@ public class P_925_isLongPressedName {
                 p++;
             } else {
                 if (i > 0 && typed.charAt(i) == typed.charAt(i - 1)) {
+                    continue;
                 } else {
                     return false;
                 }
