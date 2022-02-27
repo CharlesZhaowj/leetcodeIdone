@@ -1,4 +1,4 @@
-package com.pickbucket.leetcode.middle;
+package com.pickbucket.leetcode.medium;
 
 // 位运算做除法（很有趣，相当之有趣）
 public class P_29_divide {

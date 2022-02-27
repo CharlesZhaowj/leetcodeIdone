@@ -1,4 +1,4 @@
-package com.pickbucket.leetcode.middle;
+package com.pickbucket.leetcode.medium;
 
 public class P_540_SingleElementInASortedArray {
     public static int SingleElementInASortedArray(int[] array) {

@@ -1,4 +1,4 @@
-package com.pickbucket.leetcode.middle;
+package com.pickbucket.leetcode.medium;
 
 import java.util.ArrayList;
 import java.util.Arrays;

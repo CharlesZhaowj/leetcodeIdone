@@ -1,4 +1,4 @@
-package com.pickbucket.leetcode.middle;
+package com.pickbucket.leetcode.medium;
 
 public class P_11_maxArea {
     public int maxArea(int[] height) {
