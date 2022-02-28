@@ -36,6 +36,32 @@ public class P_6_zConvert {
         return sb.toString();
     }
 
+    public static String convert2(String s, int numRows) {
+        int length = s.length();
+        if (numRows == 1 || length <= numRows) {
+            return s;
+        }
+        StringBuilder[] sbs = new StringBuilder[numRows];
+        for (int i = 0; i < sbs.length; i++) {
+            sbs[i] = new StringBuilder();
+        }
+        int mode = numRows * 2 - 2;
+        int x = 0;
+        for (int i = 0; i < length; i++) {
+            sbs[x].append(s.charAt(i));
+            if (i % mode < numRows - 1) {
+                x++;
+            } else {
+                x--;
+            }
+        }
+        StringBuilder finalSb = new StringBuilder();
+        for (StringBuilder sb : sbs) {
+            finalSb.append(sb);
+        }
+        return finalSb.toString();
+    }
+
     /*
     PAYPALISHIRING 3 PAHNAPLSIIGYIR
 
@@ -45,7 +71,7 @@ public class P_6_zConvert {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
         Integer i = sc.nextInt();
-        System.out.println(convert(s, i));
+        System.out.println(convert2(s, i));
         sc.close();
     }
 }
