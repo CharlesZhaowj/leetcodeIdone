@@ -1,9 +1,12 @@
-package com.pickbucket.leetcode.medium;
+package com.pickbucket.leetcode.doublepointer.slidingwindow;
 
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
+/**
+ * 滑动窗口
+ */
 public class P_3_lengthOfLongestSubstring {
     public static int lengthOfLongestSubstring(String s) {
         if (s == null || s.length() == 0) {
@@ -42,15 +45,33 @@ public class P_3_lengthOfLongestSubstring {
         return ans;
     }
 
+    public static int lengthOfLongestSubstring_3(String s) {
+        // 双指针
+        int max = 0;
+        int l = 0;
+        int r = 0;
+        Set<Character> subStrChar = new HashSet();
+        // 双指针的模版？感觉最好还是while吧，一left一right
+        while (r < s.length()) {
+            char curR = s.charAt(r);
+            if (subStrChar.contains(curR)) {
+                subStrChar.remove(s.charAt(l));
+                l++;
+            } else {
+                max = Math.max(r - l + 1, max);
+                subStrChar.add(curR);
+                r++;
+            }
+        }
+        return max;
+    }
+
     /*
     abcabcbb    3
     bbbbb       1
     pwwkew      3
      */
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
-        System.out.println(lengthOfLongestSubstring(s));
-        sc.close();
+        System.out.println(lengthOfLongestSubstring_3("pwwkew"));
     }
 }

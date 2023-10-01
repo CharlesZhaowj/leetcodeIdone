@@ -1,4 +1,4 @@
-package com.pickbucket.leetcode.easy;
+package com.pickbucket.leetcode.simulate;
 
 public class P_26_removeDuplicates {
     public int removeDuplicates(int[] nums) {

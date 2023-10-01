@@ -1,4 +1,4 @@
-package com.pickbucket.leetcode.medium;
+package com.pickbucket.leetcode.doublepointer;
 
 public class P_11_maxArea {
     public int maxArea(int[] height) {

@@ -1,4 +1,4 @@
-package com.pickbucket.leetcode.easy;
+package com.pickbucket.leetcode.simulate;
 
 import com.pickbucket.leetcode.common.ListNode;
 

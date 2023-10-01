@@ -1,4 +1,4 @@
-package com.pickbucket.leetcode.easy;
+package com.pickbucket.leetcode.simulate;
 
 public class P_27_removeElement {
     public int removeElement(int[] nums, int val) {
